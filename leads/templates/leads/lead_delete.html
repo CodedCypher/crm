@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="" method="post"> {% csrf_token %}
+    <label for="submit">Are you sure you wanna delete the lead {{lead.first_name}} {{lead.last_name}}</label>
+    <br>
+    <button type="submit">Delete</button>
+</form>
+{% endblock content %}
